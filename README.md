@@ -28,4 +28,4 @@ To run the example code, please follow these steps:
 These steps ensure reproducibility of the findings described in this work.
 
 ## License
-This project is licensed under the GNU General Public License. See the LICENSE file for more details.
+This project is licensed under the GNU General Public License. See the `LICENSE` file for more details.
