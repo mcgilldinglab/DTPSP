@@ -1,4 +1,4 @@
-# DTPSP (Deep Time Point Selector and Profiler)
+# Deep Time Point Selector and Profiler (DTPSP)
 
 ## Overview
 This project implements a machine learning model for selecting optimal time points in single-cell analysis. The goal is to maximize the information learned from single-cell experiments by predicting the most informative time points for data collection. The model uses features derived from gene expression data to inform decision-making.
