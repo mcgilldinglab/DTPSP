@@ -11,8 +11,11 @@ Our research manuscript detailing DTPSP is now available on bioRxiv: [DTPSP: A D
 
 ## Key Contributions and Impact
 **Efficient Time-Point Selection:** DTPSP identifies the most informative time points in time-series studies, allowing researchers to focus on crucial intervals for detailed analysis.
+
 **Resource Optimization:** By prioritizing key time points, DTPSP enables efficient allocation of resources to in-depth profiling methods like multi-omics and single-cell studies, reducing redundancy.
+
 **Enhanced Study of Dynamic Systems:** The model supports the exploration of dynamic biological systems, such as development, disease progression, and responses to treatments, ensuring that vital temporal dynamics are captured.
+
 **Scalable and Versatile:** DTPSP provides a scalable framework adaptable to various experimental designs, significantly improving efficiency in systems biology research.
 
 ## Example Use
