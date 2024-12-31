@@ -4,9 +4,16 @@ DTPSP is a machine learning model for selecting optimal time points in single-ce
 ![Alt text](fig1_GitHub.png)
 
 ## Overview
-- Predicts optimal time points for single-cell analysis.
-- Supports pseudobulk and bulk RNA-seq data preprocessing.
-- Uses a hybrid neural network for time series prediction.
+**a, Reference time point selection:** A subset of time points, S, is selected from temporal bulk gene expression data spanning T time points and sent to a deep learning model to predict gene expression at non-selected time points. Gene expression data from S are augmented with neighboring genes (NG) with similar expression patterns, time embeddings (E), and a target label (L) that specifies the time point to be predicted. The deep regressor model undergoes pretraining with an autoencoder-based reconstruction task before being fine-tuned for regression to predict gene expression. The subset achieving the best prediction performance, SB, is identified as the most informative set of time points for subsequent analyses. **b, Single-cell profiling and processing:** The selected optimal time points, SB, are subjected to single-cell sequencing experiments to obtain real single-cell data. Standard single-cell processing pipelines are then applied to these data. **c, Single-cell inference for unselected time points (temporal single-cell semiprofiling):** For non-selected time points, a VAE-GAN model is employed to infer single-cell data matrices. The VAE-GAN is first trained on a reconstruction task to learn the data distribution of the selected time points with real single-cell data. Subsequently, bulk gene expression data are incorporated into the model to transition the process from reconstruction to inference, generating single-cell data for the target time points. This results in a semi-profiled single-cell temporal trajectory where single-cell data are available for all time points. **d, Single-cell analysis across all time points:** The semi-profiled single-cell temporal trajectory enables comprehensive single-cell analyses, including visualization, deconvolution, enrichment analysis, and more.
+
+## Publication
+Our research manuscript detailing DTPSP is now available on bioRxiv: [DTPSP: A Deep Learning Framework for Optimized Time Point Selection in Time-Series Single-Cell Studies](https://www.biorxiv.org/content/10.1101/2024.12.18.629276v1)
+
+## Key Contributions and Impact
+**Efficient Time-Point Selection:** DTPSP identifies the most informative time points in time-series studies, allowing researchers to focus on crucial intervals for detailed analysis.
+**Resource Optimization:** By prioritizing key time points, DTPSP enables efficient allocation of resources to in-depth profiling methods like multi-omics and single-cell studies, reducing redundancy.
+**Enhanced Study of Dynamic Systems:** The model supports the exploration of dynamic biological systems, such as development, disease progression, and responses to treatments, ensuring that vital temporal dynamics are captured.
+**Scalable and Versatile:** DTPSP provides a scalable framework adaptable to various experimental designs, significantly improving efficiency in systems biology research.
 
 ## Example Use
 To run the example code, please follow these steps:
