@@ -18,13 +18,28 @@ Our research manuscript detailing DTPSP is now available on bioRxiv: [DTPSP: A D
 
 **Scalable and Versatile:** DTPSP provides a scalable framework adaptable to various experimental designs, significantly improving efficiency in systems biology research.
 
+## Tech Features
+- **Simplified Workflow:** Trains on public datasets to ensure accessibility and reproducibility.
+- **Single-Cell Application:** Input format is single-cell RNA-seq data.
+- **Prediction Accuracy:** Employs a hybrid neural network model (autoencoder and regressor).
+- **Visualization:** Ability to visualize average MAE and R<sup>2</sup> values for all shown time points, as well as UMAP single-cell visualizations.
+- **Example Tutorial:** An example notebook covering all steps, from model training and time point selection to single-cell visualization.
+
+## Data Preparation
+### Input Requirements
+- Format: Data should be in AnnData's .h5ad format
+- Gene Expression Matrices:
+  - Genes as variables (adata.var_names)
+  - Cells as observations (adata.obs_names)
+The `example_data` folder provides data that can be used in the `Example_Code.ipynb` notebook to train a model, output average MAE and R<sup>2</sup> values, and visualize single-cell reconstruction.
+
 ## Example Use
 To run the example code, please follow these steps:
 
 1. **Download the Required Files**:  
-   - Obtain the `Example_Code.ipynb` file and the `example_data` folder.
+   - Download the `Example_Code.ipynb` file and the `example_data` folder.
 
-2. **Set Up the Computational Environment**:  
+2. **Set Up the Environment**:  
    - Ensure that Python and all required dependencies are installed. The necessary packages can be installed directly from within the notebook if not already available.
 
 3. **Execute the Code**:  
