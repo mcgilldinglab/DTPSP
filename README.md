@@ -67,4 +67,4 @@ These steps ensure reproducibility of the findings described in this work.
 This project is licensed under the GNU General Public License. See the `LICENSE` file for more details.
 
 
-Happy Profiling!
+**Happy Profiling!**
