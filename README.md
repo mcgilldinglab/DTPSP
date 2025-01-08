@@ -2,6 +2,7 @@
 DTPSP is a machine learning model for selecting optimal time points in single-cell analysis. The goal is to maximize the information learned from single-cell experiments by predicting the most informative time points for data collection. The model uses features derived from gene expression data to inform decision-making.
 
 ![Alt text](fig1_GitHub.png)
+*Fig. 1: DTPSP method overview*
 
 ## Overview
 **a, Reference time point selection:** A subset of time points, S, is selected from temporal bulk gene expression data spanning T time points and sent to a deep learning model to predict gene expression at non-selected time points. Gene expression data from S are augmented with neighboring genes (NG) with similar expression patterns, time embeddings (E), and a target label (L) that specifies the time point to be predicted. The deep regressor model undergoes pretraining with an autoencoder-based reconstruction task before being fine-tuned for regression to predict gene expression. The subset achieving the best prediction performance, SB, is identified as the most informative set of time points for subsequent analyses. **b, Single-cell profiling and processing:** The selected optimal time points, SB, are subjected to single-cell sequencing experiments to obtain real single-cell data. Standard single-cell processing pipelines are then applied to these data. **c, Single-cell inference for unselected time points (temporal single-cell semiprofiling):** For non-selected time points, a VAE-GAN model is employed to infer single-cell data matrices. The VAE-GAN is first trained on a reconstruction task to learn the data distribution of the selected time points with real single-cell data. Subsequently, bulk gene expression data are incorporated into the model to transition the process from reconstruction to inference, generating single-cell data for the target time points. This results in a semi-profiled single-cell temporal trajectory where single-cell data are available for all time points. **d, Single-cell analysis across all time points:** The semi-profiled single-cell temporal trajectory enables comprehensive single-cell analyses, including visualization, deconvolution, enrichment analysis, and more.
@@ -51,6 +52,9 @@ To run the example code, please follow these steps:
    - The notebook will produce the trained model as well as average MAE and R<sup>2</sup> values.
 
 These steps ensure reproducibility of the findings described in this work.
+
+## API Documentation
+
 
 ## License
 This project is licensed under the GNU General Public License. See the `LICENSE` file for more details.
