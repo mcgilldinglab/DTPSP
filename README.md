@@ -11,13 +11,14 @@ DTPSP is a machine learning model for selecting optimal time points in single-ce
 Our research manuscript detailing DTPSP is now available on bioRxiv: [DTPSP: A Deep Learning Framework for Optimized Time Point Selection in Time-Series Single-Cell Studies](https://www.biorxiv.org/content/10.1101/2024.12.18.629276v1)
 
 ## Key Contributions and Impact
-**Efficient Time-Point Selection:** DTPSP identifies the most informative time points in time-series studies, allowing researchers to focus on crucial intervals for detailed analysis.
+#### Efficient Time-Point Selection
+DTPSP identifies the most informative time points in time-series studies. By prioritizing key time points, DTPSP enables efficient allocation of resources to in-depth profiling methods like multi-omics and single-cell studies, reducing redundancy.
 
-**Resource Optimization:** By prioritizing key time points, DTPSP enables efficient allocation of resources to in-depth profiling methods like multi-omics and single-cell studies, reducing redundancy.
+#### Enhanced Study of Dynamic Systems
+The model supports the exploration of dynamic biological systems, such as development, disease progression, and responses to treatments, ensuring that vital temporal dynamics are captured.
 
-**Enhanced Study of Dynamic Systems:** The model supports the exploration of dynamic biological systems, such as development, disease progression, and responses to treatments, ensuring that vital temporal dynamics are captured.
-
-**Scalable and Versatile:** DTPSP provides a scalable framework adaptable to various experimental designs, significantly improving efficiency in systems biology research.
+#### Scalable and Versatile
+DTPSP provides a scalable framework adaptable to various experimental designs, significantly improving efficiency in systems biology research.
 
 ## Tech Features
 - **Simplified Workflow:** Trains on public datasets to ensure accessibility and reproducibility.
@@ -61,7 +62,7 @@ To run the example code, please follow these steps:
 These steps ensure reproducibility of the findings described in this work.
 
 ## API Documentation
-
+An exntensive API for DTPSP is under development.
 
 ## License
 This project is licensed under the GNU General Public License. See the `LICENSE` file for more details.
