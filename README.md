@@ -37,9 +37,9 @@ The `example_data` folder provides data that can be used in the `Example_Code.ip
 Preprocessing steps include:
 - Normalizing
 - Thresholding
-- Normalizing
-- Avergaing
-- Transforming with log1p
+- Normalizing (again)
+- Avergaing across cells
+- Log1p transformation
 
 ## Example Use
 To run the example code, please follow these steps:
