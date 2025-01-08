@@ -32,7 +32,14 @@ Our research manuscript detailing DTPSP is now available on bioRxiv: [DTPSP: A D
 - Gene Expression Matrices:
   - Genes as variables (adata.var_names)
   - Cells as observations (adata.obs_names)
+### Example Data
 The `example_data` folder provides data that can be used in the `Example_Code.ipynb` notebook to train a model, output average MAE and R<sup>2</sup> values, and visualize single-cell reconstruction.
+Preprocessing steps include:
+- Normalizing
+- Thresholding
+- Normalizing
+- Avergaing
+- Transforming with log1p
 
 ## Example Use
 To run the example code, please follow these steps:
